@@ -1,0 +1,26 @@
+/* CSS reset */
+ul{
+	margin:0;
+	padding:0;
+}
+/* General Demo Style */
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	position: relative;
+  width:100%;
+  height:104.14129110840437vh;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.container > header{
+		text-align: center;
+	}
+	p.codrops-demos {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+}
