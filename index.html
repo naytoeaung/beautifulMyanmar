@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<head>
+    <title>Beautiful Myanmar</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <script type="text/javascript" src="js/body2.js"></script>
+</head>
+<body>
+     <ul class="cb-slideshow"> <!-- ref: http://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/ -->
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+    </ul>
+<div class="container">
+    <header>
+      <img id="logo" src="img/myanmarlogo.png">
+      <ul id="menu">
+        <li class="sub"><a id="selected" href="index.html"><p1>.</p1>Home<p1>.</p1></a></li>
+        <li class="sub"><a class="submenu" href="attraction/attraction.html">Attraction</a></li>
+        <li class="sub">
+          <div class="dropdown"> <!-- ref: https://www.w3schools.com/css/css_dropdowns.asp-->
+            <button class="dropbtn">
+              <a class="submenu" href="#"><p1>.</p1>States<p1>.</p1></a>
+            </button>
+              <div class="dropdown-content">
+                <a href="states/kachin/kachin.html">Kachin</a>
+                <a href="states/kayah/kayah.html">Kayah</a>
+                <a href="states/kayin/kayin.html">Kayin</a>
+                <a href="states/chin/chin.html">Chin</a>
+                <a href="states/mon/mon.html">Mon</a>
+                <a href="states/rakhine/rakhine.html">Rakhine</a>
+                <a href="states/shan/shan.html">Shan</a>
+                <a href="states/mandalay/mandalay.html">Mandalay</a>
+                <a href="states/yangon/yangon.html">Yangon</a>
+                <a href="states/bago/bago.html">Bago</a>
+                <a href="states/magway/magway.html">Magway</a>
+                <a href="states/sagaing/sagaing.html">Sagaing</a>
+                <a href="states/ayeyarwaddy/ayeyarwaddy.html">Ayeyarwaddy</a>
+                <a href="states/tanintharyi/tanintharyi.html">Tanintharyi</a>
+              </div>
+          </div>
+        </li>
+        <li class="sub"><a class="submenu" href="gallery/gallery.html">Gallery</a></li>
+        <li class="sub"><a class="submenu" href="contact/contact.html">Contact</a></li>
+      </ul>
+      <div class="tab">
+        <a id="mm" onmouseover="openCity(event, 'wtmyanmar')"></a>
+        <div id="arrow">&#187;</div>
+      </div>
+    </header>
+</div><!--  container -->
+<div id="wtmyanmar" class="tabcontent"> <!-- ref: https://www.w3schools.com/howto/howto_js_hover_tabs.asp-->
+      <img id="map" src="img/myanmar.png">
+      <h1 id="welcome">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtmyanmar -->
+<div id="wtbago" class="tabcontent">
+      <img id="map" src="img/bago.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a href="states/bago/bago.html" id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a href="states/bago/bago.html" id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtbago -->
+<div id="wtmandalay" class="tabcontent">
+      <img id="map" src="img/mandalay.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a href="states/mandalay/mandalay.html" id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a href="states/mandalay/mandalay.html" id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtmandalay -->
+<div id="wtmagway" class="tabcontent">
+      <img id="map" src="img/magway.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a href="states/magway/magway.html" id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a href="states/magway/magway.html" id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtmagway -->
+<div id="wtsagaing" class="tabcontent">
+      <img id="map" src="img/sagaing.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a href="states/sagaing/sagaing.html" id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a href="states/sagaing/sagaing.html" id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtsagaing -->
+<div id="wtayar" class="tabcontent">
+      <img id="map" src="img/ayeyarwaddy.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a href="states/ayeyarwaddy/ayeyarwaddy.html" id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a href="states/ayeyarwaddy/ayeyarwaddy.html" id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtayar -->
+<div id="wtygn" class="tabcontent">
+      <img id="map" src="img/yangon.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a href="states/yangon/yangon.html" id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtygn -->
+<div id="wtchin" class="tabcontent">
+      <img id="map" src="img/chin.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a href="states/chin/chin.html" id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a href="states/chin/chin.html" id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtchin -->
+<div id="wtrakhine" class="tabcontent">
+      <img id="map" src="img/rakhine.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a href="states/rakhine/rakhine.html" id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a href="states/rakhine/rakhine.html" id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtrakhine -->
+<div id="wtkachin" class="tabcontent">
+      <img id="map" src="img/kachin.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a href="states/kachin/kachin.html" id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtkachin -->
+<div id="wtshan" class="tabcontent">
+      <img id="map" src="img/shan.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a href="states/shan/shan.html" id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a href="states/shan/shan.html" id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a href="states/shan/shan.html" id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtshan -->
+<div id="wtkayar" class="tabcontent">
+      <img id="map" src="img/kayar.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a href="states/kayah/kayah.html" id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtkayar -->
+<div id="wtmon" class="tabcontent">
+      <img id="map" src="img/mon.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a href="states/mon/mon.html" id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a href="states/mon/mon.html" id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtmon -->
+<div id="wtkayin" class="tabcontent">
+      <img id="map" src="img/kayin.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a href="states/kayin/kayin.html" id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a href="states/kayin/kayin.html" id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wtkayin -->
+<div id="wttny" class="tabcontent">
+      <img id="map" src="img/tny.png">
+      <h1 id="welcome1">Welcome to Myanmar</h1>
+      <a id="sagaingb1" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="kachinb" onmouseover="openCity(event, 'wtkachin')">.</a><br>
+      <a id="chinb1" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="sagaingb" onmouseover="openCity(event, 'wtsagaing')">.</a>
+      <a id="shanb1" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="chinb" onmouseover="openCity(event, 'wtchin')">.</a>
+      <a id="magwayb1" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb1" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb2" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="magwayb" onmouseover="openCity(event, 'wtmagway')">.</a>
+      <a id="mandalayb" onmouseover="openCity(event, 'wtmandalay')">.</a>
+      <a id="shanb" onmouseover="openCity(event, 'wtshan')">.</a><br>
+      <a id="rakhineb1" onmouseover="openCity(event, 'wtrakhine')">.</a>
+      <a id="bagob1" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayarb" onmouseover="openCity(event, 'wtkayar')">.</a><br>
+      <a id="ayarb1" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="bagob" onmouseover="openCity(event, 'wtbago')">.</a>
+      <a id="kayinb1" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="ayarb" onmouseover="openCity(event, 'wtayar')">.</a>
+      <a id="ygnb" onmouseover="openCity(event, 'wtygn')">.</a>
+      <a id="monb" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a id="monb1" onmouseover="openCity(event, 'wtmon')">.</a>
+      <a id="kayinb2" onmouseover="openCity(event, 'wtkayin')">.</a><br>
+      <a href="states/tanintharyi/tanintharyi.html" id="tnyb" onmouseover="openCity(event, 'wttny')">.</a>
+</div><!-- wttny -->
+<div class="clearfix"></div>
+<div id="content">
+  <div id="one"> <!-- ref: https://www.youtube.com/watch?v=XpeTEY5ndII&list=PLg6RRgknGDZmyKDYqr9usery4mez3GRLv&index=9&t=19s&ab_channel=OnlineTutorials -->
+    <div id="one_one">
+        <div id="one_one_figure">
+          <img src="img/1.jpg" id="one_one_img">
+          <div id="one_one_about">
+            <p id="one_one_txt">Yangon City, Located in <a href="states/yangon/yangon.html" id="one_one_link">Yangon region</a>.</p>
+          </div><!-- one_one_about -->
+        </div><!-- one_one_figure -->
+    </div><!-- one_one -->
+    <div id="one_two">
+        <div id="one_two_figure">
+          <img src="img/2.jpg" id="one_two_img">
+          <div id="one_two_about">
+            <p id="one_two_txt">Mandalay City, Located in <a href="states/mandalay/mandalay.html" id="one_two_link">Mandalay region</a>.</p>
+          </div><!-- one_two_about -->
+        </div><!-- one_two_figure -->
+    </div><!-- one_two -->
+    <div id="one_three">
+        <div id="one_three_figure">
+          <img src="img/3.jpeg" id="one_three_img">
+          <div id="one_three_about">
+            <p id="one_three_txt">Nay Pyi Taw City, Located in <a href="states/mandalay/mandalay.html" id="one_three_link">Mandalay region</a>.</p>
+          </div><!-- one_three_about -->
+        </div><!-- one_three_figure -->
+    </div><!-- one_three -->
+  </div><!-- one -->
+  <div id="two">
+    <div id="two_about">
+      <h2 id="two_head">MYANMAR</h2>
+    </div><!-- two_head -->
+    <p id="two_txt">Myanmar (formerly Burma) is a Southeast Asian nation of more than 100 ethnic groups, bordering India, Bangladesh, China, Laos and Thailand. Yangon (formerly Rangoon), the country's largest city, is home to bustling markets, numerous parks and lakes, and the towering, gilded Shwedagon Pagoda, which contains Buddhist relics and dates to the 6th century. In a nation of multiple ethnic groups, exploring Myanmar can sometimes feel like you've stumbled into a living edition of National Geographic, c 1910. For all the recent changes, Myanmar remains at heart a rural nation of traditional values. You'll encounter men wearing the sarong-like longyi and chewing betel nut, spitting the blood-red juice onto the ground, women with faces smothered in thanakha (a natural sunblock), and cheroot-smoking grannies.</p>
+  </div><!-- two -->
+  <div id="three">
+    <div id="three_about">
+      <h2 id="three_head">POPULAR PLACES</h2>
+    </div><!-- three_about -->
+    <div id="three_content">
+      <div id="three_one">
+          <div id="three_one_figure">
+            <img src="img/4.jpg" id="three_one_img">
+            <div id="three_one_about">
+              <p id="three_one_cap"><a href="states/mandalay/mandalay.html" id="three_link">BAGAN</a></p>
+            </div><!-- three_one_about -->
+          </div><!-- three_one_figure -->
+        </div><!-- three_one -->
+        <div id="three_one_content">
+          <p id="three_one_txt">Lying on a bend of the Ayeyarwady River in the central plain of Myanmar, Bagan is a sacred landscape, featuring an exceptional range of Buddhist art and architecture. The seven components of the serial property include numerous temples, stupas, monasteries and places of pilgrimage, as well as archaeological remains, frescoes and sculptures. The property bears spectacular testimony to the peak of Bagan civilization (11th -13th centuries CE), when the site was the capital of a regional empire.</p>
+        </div><!-- three_one_content -->
+        <div id="three_two">
+          <div id="three_two_figure">
+            <img src="img/5.jpg" id="three_two_img">
+            <div id="three_two_about">
+              <p id="three_two_cap"><a href="states/yangon/yangon.html" id="three_link">SHWEDAGON</a></p>
+            </div><!-- three_two_about -->
+          </div><!-- three_two_figure -->
+        </div><!-- three_two -->
+        <div id="three_two_content">
+          <p id="three_two_txt">One of Buddhism's most sacred sites, the 326ft zedi (stupa) here is adorned with 27 metric tons of gold leaf, along with thousands of diamonds and other gems, and is believed to enshrine strands of the Gautama Buddha's hair as well as relics of three former buddhas. Four entrance stairways lead to the main terrace. Visit at dawn if you want tranquillity; otherwise, pay your respects when the golden stupa flames crimson and burnt orange in the setting sun.</p>
+        </div><!-- three_two_content -->
+        <div id="three_three">
+          <div id="three_three_figure">
+            <img src="img/6.jpeg" id="three_three_img">
+            <div id="three_three_about">
+              <p id="three_three_cap"><a href="states/mon/mon.html" id="three_link">KYAIKHTIYO</a></p>
+            </div><!-- three_three_about -->
+          </div><!-- three_three_figure -->
+        </div><!-- three_three -->
+        <div id="three_three_content">
+          <p id="three_three_txt">The Kyaikhtiyo Pagoda, also called the Golden Rock is one of Burma’s most sacred Buddhist sites. A massive boulder on the edge of a cliff with a pagoda on top of it enshrining a hair of the Buddha is an important pilgrimage site for Burmese Buddhists. The huge Golden Rock in the mountains North East of Yangon hanging over a steep cliff provides for an amazing sight. The rock that appears to be gold is actually a granite boulder that is covered with gold leaf applied to the rock by Buddhist devotees.</p>
+        </div><!-- three_three_content -->
+      </div><!-- three_content -->
+  </div><!-- three -->
+  <div id="four">
+    <div id="four_one">
+      <div id="four_one_figure">
+        <img src="img/7.jpg" id="four_one_img">
+      </div><!-- four_one_figure -->
+      <div id="four_one_about">
+        <h3 id="four_one_head"><a href="states/shan/shan.html" id="three_link">INLE LAKE</a></h3>
+        <p id="four_one_txt">The Inle Lake region is one of Myanmar's most anticipated destinations, and all the hype is justified. Picture a vast, serene lake – 13.5 miles long and 7 miles wide – fringed by marshes and floating gardens, where stilt-house villages and Buddhist temples rise above the water, and Intha fisher folk propel their boats along via their unique technique of leg-rowing.</p>
+      </div><!-- four_one_about -->
+    </div><!-- four_one -->
+    <div id="four_two">
+      <div id="four_two_figure">
+        <img src="img/8.jpg" id="four_two_img">
+      </div><!-- four_two_figure -->
+      <div id="four_two_about">
+        <h3 id="four_two_head"><a href="states/kayin/kayin.html" id="three_link">SADAN CAVE</a></h3>
+        <p id="four_two_txt">This football-stadium-sized cave is simply breathtaking, its entrance dominated by dozens of buddha statues, a couple of pagodas and some newer clay wall carvings. With the cave now illuminated, you can scramble for 15 or 20 minutes through chambers as high as a cathedral, past truck-sized stalactites and, in places, walls of crystal.</p>
+      </div><!-- four_two_about -->
+    </div><!-- four_two -->
+    <div id="four_three">
+      <div id="four_three_figure">
+        <img src="img/9.jpg" id="four_three_img">
+      </div><!-- four_three_figure -->
+      <div id="four_three_about">
+        <h3 id="four_three_head"><a href="states/rakhine/rakhine.html" id="three_link">NGAPALI BEACH</a></h3>
+        <p id="four_three_txt">Ngapali (pronounced Napally and said to be named after the Italian city of Naples) is Myanmar’s premier beach destination. Located on the Bay of Bengal coast in Rakhine State, its main feature is an idyllic stretch of white sand and palm tree-lined coast, with a number of resorts spread out next to traditional fishing villages.</p>
+      </div><!-- four_three_about -->
+    </div><!-- four_three -->
+  </div><!-- four -->
+  <div id="five">
+    <div id="five_one">
+        <div id="five_one_figure">
+          <img src="img/10.png" id="five_one_img">
+          <div id="five_one_about">
+            <p id="five_one_cap"><a href="states/kachin/kachin.html" id="three_link">INDAWGYI</a></p>
+          </div><!-- five_one_about -->
+        </div><!-- five_one_figure -->
+      </div><!-- five_one -->
+      <div id="five_one_content">
+        <p id="five_one_txt">Indawgyi Lake is a secluded destination for nature lovers in remote Kachin State. The largest lake in Myanmar, Indawgyi remains pristine and undeveloped and has been designated as a UNESCO Biosphere Reserve; it’s still possible to find places where you won’t hear the drone of a motor – or even see a single boat. The area is largely untouched by tourism, with few foreigners making the journey this far north.</p>
+      </div><!-- five_one_content -->
+      <div id="five_two">
+        <div id="five_two_figure">
+          <img src="img/11.jpg" id="five_two_img">
+          <div id="five_two_about">
+            <p id="five_two_cap"><a href="states/kayah/kayah.html" id="three_link">KYAT CAVE</a></p>
+          </div><!-- five_two_about -->
+        </div><!-- five_two_figure -->
+      </div><!-- five_two -->
+      <div id="five_two_content">
+        <p id="five_two_txt">Kyat Cave is a limestone and dolomite cave situated about ten miles east from Loi Kaw, Kayah State in Myanmar. It is a popular travel destination because of its untouched nature but also for a more curious attraction - several coffins of an ethnic group. The longest coffins are 15 feet long and the shortest ones 2 feet and are made by engraving logs.</p>
+      </div><!-- five_two_content -->
+      <div id="five_three">
+        <div id="five_three_figure">
+          <img src="img/12.jpg" id="five_three_img">
+          <div id="five_three_about">
+            <p id="five_three_cap"><a href="states/chin/chin.html" id="three_link">BUNGTLA</a></p>
+          </div><!-- five_three_about -->
+        </div><!-- five_three_figure -->
+      </div><!-- five_three -->
+      <div id="five_three_content">
+        <p id="five_three_txt">A tour of Matupi, in southern Chin State, is incomplete without a visit to Bungtla, a spectacular cascading waterfall standing in majestic isolation. The nine-tier waterfall is located near the village of Hti Saung, 14 miles southeast of Matupi. The Lemyo River originates from the waterfall and empties into the Bay of Bengal in Sittwe, Arakan State. Water falls from a mountain more than 4,200 feet high, making Bungtla around 3,000 feet tall.</p>
+      </div><!-- five_three_content -->
+    </div><!-- five -->
+    <div id="six">
+      <div id="six_about">
+        <h2 id="six_head">MUST SEE</h2>
+      </div><!-- six_about -->
+      <div id="six_content">
+        <div id="six_one">
+          <div id="six_one_figure">
+            <img src="img/13.jpg" id="six_one_img">
+            <div id="six_one_cap">
+                <div id="six_one_about">
+                  <a href="states/shan/shan.html" id="six_one_txt"><p id="six_one_txt">Fire Ballon Festival</p></a>
+                </div><!-- six_one_about -->
+                <div id="six_one_link">
+                  <a href="states/shan/shan.html" id="six_one_subl">linklink</a>
+                </div><!-- six_one_link  -->
+            </div><!-- six_one_cap -->
+          </div><!-- six_one_figure -->
+        </div><!-- six_one -->
+        <div id="six_two">
+          <div id="six_two_figure">
+            <img src="img/14.jpg" id="six_two_img">
+            <div id="six_two_cap">
+                <div id="six_two_about">
+                  <a href="states/kachin/kachin.html" id="six_two_txt"><p id="six_two_txt">Manau Festival</p></a>
+                </div><!-- six_two_about -->
+                <div id="six_two_link">
+                  <a href="states/kachin/kachin.html" id="six_two_subl">linklink</a>
+                </div><!-- six_two_link  -->
+            </div><!-- six_two_cap -->
+          </div><!-- six_two_figure -->
+        </div><!-- six_two -->
+        <div id="six_three">
+          <div id="six_three_figure">
+            <img src="img/15.jpg" id="six_three_img">
+            <div id="six_three_cap">
+                <div id="six_three_about">
+                  <a href="states/kayin/kayin.html" id="six_three_txt"><p id="six_three_txt">Kayin Don Dance</p></a>
+                </div><!-- six_three_about -->
+                <div id="six_three_link">
+                  <a href="states/kayin/kayin.html" id="six_three_subl">linklink</a>
+                </div><!-- six_three_link  -->
+            </div><!-- six_three_cap -->
+          </div><!-- six_three_figure -->
+        </div><!-- six_three -->
+        <div id="six_four">
+          <div id="six_four_figure">
+            <img src="img/16.jpg" id="six_four_img">
+            <div id="six_four_cap">
+                <div id="six_four_about">
+                  <a href="states/mon/mon.html" id="six_four_txt"><p id="six_four_txt">Mon Cultural Dance</p></a>
+                </div><!-- six_four_about -->
+                <div id="six_four_link">
+                  <a href="states/mon/mon.html" id="six_four_subl">linklink</a>
+                </div><!-- six_four_link  -->
+            </div><!-- six_four_cap -->
+          </div><!-- six_four_figure -->
+        </div><!-- six_four -->
+        <div id="six_five">
+          <div id="six_five_figure">
+            <img src="img/17.jpg" id="six_five_img">
+            <div id="six_five_cap">
+                <div id="six_five_about">
+                  <a href="states/kayah/kayah.html" id="six_five_txt"><p id="six_five_txt">Kayah People</p></a>
+                </div><!-- six_five_about -->
+                <div id="six_five_link">
+                  <a href="states/kayah/kayah.html" id="six_five_subl">linklink</a>
+                </div><!-- six_five_link  -->
+            </div><!-- six_five_cap -->
+          </div><!-- six_five_figure -->
+        </div><!-- six_five -->
+        <div id="six_six">
+          <div id="six_six_figure">
+            <img src="img/18.jpg" id="six_six_img">
+            <div id="six_six_cap">
+                <div id="six_six_about">
+                  <a href="states/chin/chin.html" id="six_six_txt"><p id="six_six_txt">Chin's Bamboo Dance</p></a>
+                </div><!-- six_six_about -->
+                <div id="six_six_link">
+                  <a href="states/chin/chin.html" id="six_six_subl">linklink</a>
+                </div><!-- six_six_link  -->
+            </div><!-- six_six_cap -->
+          </div><!-- six_six_figure -->
+        </div><!-- six_six -->
+        <div id="six_seven">
+          <div id="six_seven_figure">
+            <img src="img/19.jpg" id="six_seven_img">
+            <div id="six_seven_cap">
+                <div id="six_seven_about">
+                  <a href="states/shan/shan.html" id="six_seven_txt"><p id="six_seven_txt">Shan's Sword Dance</p></a>
+                </div><!-- six_seven_about -->
+                <div id="six_seven_link">
+                  <a href="states/shan/shan.html" id="six_seven_subl">linklink</a>
+                </div><!-- six_seven_link  -->
+            </div><!-- six_seven_cap -->
+          </div><!-- six_seven_figure -->
+        </div><!-- six_seven -->
+        <div id="six_eight">
+          <div id="six_eight_figure">
+            <img src="img/20.jpg" id="six_eight_img">
+            <div id="six_eight_cap">
+                <div id="six_eight_about">
+                  <a href="states/shan/shan.html" id="six_eight_txt"><p id="six_eight_txt">The Kainnari and Kainnara Dance</p></a>
+                </div><!-- six_eight_about -->
+                <div id="six_eight_link">
+                  <a href="states/shan/shan.html" id="six_eight_subl">linklink</a>
+                </div><!-- six_eight_link  -->
+            </div><!-- six_eight_cap -->
+          </div><!-- six_eight_figure -->
+        </div><!-- six_eight -->
+        <div id="six_nine">
+          <div id="six_nine_figure">
+            <img src="img/21.jpg" id="six_nine_img">
+            <div id="six_nine_cap">
+                <div id="six_nine_about">
+                  <a href="states/rakhine/rakhine.html" id="six_nine_txt"><p id="six_nine_txt">Rakhine's Sand Pagoda Festival</p></a>
+                </div><!-- six_nine_about -->
+                <div id="six_nine_link">
+                  <a href="states/rakhine/rakhine.html" id="six_nine_subl">linklink</a>
+                </div><!-- six_nine_link  -->
+            </div><!-- six_nine_cap -->
+          </div><!-- six_nine_figure -->
+        </div><!-- six_nine -->
+        <div id="six_ten">
+          <div id="six_ten_figure">
+            <img src="img/22.jpg" id="six_ten_img">
+            <div id="six_ten_cap">
+                <div id="six_ten_about">
+                  <a href="states/mandalay/mandalay.html" id="six_ten_txt"><p id="six_ten_txt">Burmese Traditional Dance</p></a>
+                </div><!-- six_ten_about -->
+                <div id="six_ten_link">
+                  <a href="states/mandalay/mandalay.html" id="six_ten_subl">linklink</a>
+                </div><!-- six_ten_link  -->
+            </div><!-- six_ten_cap -->
+          </div><!-- six_ten_figure -->
+        </div><!-- six_ten -->
+      </div><!-- six_content -->
+    </div><!-- six -->
+    <div id="seven">
+      <div id="seven_about">
+        <h2 id="seven_head">EXPLORE ALL THE STATES</h2>
+      </div><!-- seven_about -->
+      <div id="seven_content">
+        <div id="seven_one">
+          <div id="seven_one_figure">
+            <img src="img/23.jpg" id="seven_one_img">
+            <div id="seven_one_cap">
+                <div id="seven_one_about">
+                  <a href="states/kachin/kachin.html" id="seven_one_txt"><p id="seven_one_txt">Kachin</p></a>
+                </div><!-- seven_one_about -->
+                <div id="seven_one_link">
+                  <a href="states/kachin/kachin.html" id="seven_one_subl">linklink</a>
+                </div><!-- seven_one_link  -->
+            </div><!-- seven_one_cap -->
+          </div><!-- seven_one_figure -->
+        </div><!-- seven_one -->
+        <div id="seven_two">
+          <div id="seven_two_figure">
+            <img src="img/24.jpg" id="seven_two_img">
+            <div id="seven_two_cap">
+                <div id="seven_two_about">
+                  <a href="states/sagaing/sagaing.html" id="seven_two_txt"><p id="seven_two_txt">Sagaing</p></a>
+                </div><!-- seven_two_about -->
+                <div id="seven_two_link">
+                  <a href="states/sagaing/sagaing.html" id="seven_two_subl">linklink</a>
+                </div><!-- seven_two_link  -->
+            </div><!-- seven_two_cap -->
+          </div><!-- seven_two_figure -->
+        </div><!-- seven_two -->
+        <div id="seven_three">
+          <div id="seven_three_figure">
+            <img src="img/25.jpg" id="seven_three_img">
+            <div id="seven_three_cap">
+                <div id="seven_three_about">
+                  <a href="states/chin/chin.html" id="seven_three_txt"><p id="seven_three_txt">Chin</p></a>
+                </div><!-- seven_three_about -->
+                <div id="seven_three_link">
+                  <a href="states/chin/chin.html" id="seven_three_subl">linklink</a>
+                </div><!-- seven_three_link  -->
+            </div><!-- seven_three_cap -->
+          </div><!-- seven_three_figure -->
+        </div><!-- seven_three -->
+        <div id="seven_four">
+          <div id="seven_four_figure">
+            <img src="img/26.jpg" id="seven_four_img">
+            <div id="seven_four_cap">
+                <div id="seven_four_about">
+                  <a href="states/magway/magway.html" id="seven_four_txt"><p id="seven_four_txt">Magway</p></a>
+                </div><!-- seven_four_about -->
+                <div id="seven_four_link">
+                  <a href="states/magway/magway.html" id="seven_four_subl">linklink</a>
+                </div><!-- seven_four_link  -->
+            </div><!-- seven_four_cap -->
+          </div><!-- seven_four_figure -->
+        </div><!-- seven_four -->
+        <div id="seven_five">
+          <div id="seven_five_figure">
+            <img src="img/27.jpg" id="seven_five_img">
+            <div id="seven_five_cap">
+                <div id="seven_five_about">
+                  <a href="states/shan/shan.html" id="seven_five_txt"><p id="seven_five_txt">Shan</p></a>
+                </div><!-- seven_one_about -->
+                <div id="seven_five_link">
+                  <a href="states/shan/shan.html" id="seven_five_subl">linklink</a>
+                </div><!-- seven_five_link  -->
+            </div><!-- seven_five_cap -->
+          </div><!-- seven_five_figure -->
+        </div><!-- seven_five -->
+        <div id="seven_six">
+          <div id="seven_six_figure">
+            <img src="img/28.jpg" id="seven_six_img">
+            <div id="seven_six_cap">
+                <div id="seven_six_about">
+                  <a href="states/mandalay/mandalay.html" id="seven_six_txt"><p id="seven_six_txt">Mandalay</p></a>
+                </div><!-- seven_six_about -->
+                <div id="seven_six_link">
+                  <a href="states/mandalay/mandalay.html" id="seven_six_subl">linklink</a>
+                </div><!-- seven_six_link  -->
+            </div><!-- seven_six_cap -->
+          </div><!-- seven_six_figure -->
+        </div><!-- seven_six -->
+        <div id="seven_seven">
+          <div id="seven_seven_figure">
+            <img src="img/29.jpg" id="seven_seven_img">
+            <div id="seven_seven_cap">
+                <div id="seven_seven_about">
+                  <a href="states/rakhine/rakhine.html" id="seven_seven_txt"><p id="seven_seven_txt">Rakhine</p></a>
+                </div><!-- seven_seven_about -->
+                <div id="seven_seven_link">
+                  <a href="states/rakhine/rakhine.html" id="seven_seven_subl">linklink</a>
+                </div><!-- seven_seven_link  -->
+            </div><!-- seven_seven_cap -->
+          </div><!-- seven_seven_figure -->
+        </div><!-- seven_seven -->
+        <div id="seven_eight">
+          <div id="seven_eight_figure">
+            <img src="img/30.jpg" id="seven_eight_img">
+            <div id="seven_eight_cap">
+                <div id="seven_eight_about">
+                  <a href="states/bago/bago.html" id="seven_eight_txt"><p id="seven_eight_txt">Bago</p></a>
+                </div><!-- seven_eight_about -->
+                <div id="seven_eight_link">
+                  <a href="states/bago/bago.html" id="seven_eight_subl">linklink</a>
+                </div><!-- seven_eight_link  -->
+            </div><!-- seven_eight_cap -->
+          </div><!-- seven_eight_figure -->
+        </div><!-- seven_eight -->
+        <div id="seven_nine">
+          <div id="seven_nine_figure">
+            <img src="img/31.jpg" id="seven_nine_img">
+            <div id="seven_nine_cap">
+                <div id="seven_nine_about">
+                  <a href="states/kayah/kayah.html" id="seven_nine_txt"><p id="seven_nine_txt">Kayah</p></a>
+                </div><!-- seven_nine_about -->
+                <div id="seven_nine_link">
+                  <a href="states/kayah/kayah.html" id="seven_nine_subl">linklink</a>
+                </div><!-- seven_nine_link  -->
+            </div><!-- seven_nine_cap -->
+          </div><!-- seven_nine_figure -->
+        </div><!-- seven_nine -->
+        <div id="seven_ten">
+          <div id="seven_ten_figure">
+            <img src="img/32.jpg" id="seven_ten_img">
+            <div id="seven_ten_cap">
+                <div id="seven_ten_about">
+                  <a href="states/kayin/kayin.html" id="seven_ten_txt"><p id="seven_ten_txt">Kayin</p></a>
+                </div><!-- seven_ten_about -->
+                <div id="seven_ten_link">
+                  <a href="states/kayin/kayin.html" id="seven_ten_subl">linklink</a>
+                </div><!-- seven_ten_link  -->
+            </div><!-- seven_ten_cap -->
+          </div><!-- seven_ten_figure -->
+        </div><!-- seven_ten -->
+        <div id="seven_eleven">
+          <div id="seven_eleven_figure">
+            <img src="img/33.jpg" id="seven_eleven_img">
+            <div id="seven_eleven_cap">
+                <div id="seven_eleven_about">
+                  <a href="states/mon/mon.html" id="seven_eleven_txt"><p id="seven_eleven_txt">Mon</p></a>
+                </div><!-- seven_eleven_about -->
+                <div id="seven_eleven_link">
+                  <a href="states/mon/mon.html" id="seven_eleven_subl">linklink</a>
+                </div><!-- seven_eleven_link  -->
+            </div><!-- seven_eleven_cap -->
+          </div><!-- seven_eleven_figure -->
+        </div><!-- seven_eleven -->
+        <div id="seven_twelve">
+          <div id="seven_twelve_figure">
+            <img src="img/34.jpg" id="seven_twelve_img">
+            <div id="seven_twelve_cap">
+                <div id="seven_twelve_about">
+                  <a href="states/tanintharyi/tanintharyi.html" id="seven_twelve_txt"><p id="seven_twelve_txt">Tanintharyi</p></a>
+                </div><!-- seven_twelve_about -->
+                <div id="seven_twelve_link">
+                  <a href="states/tanintharyi/tanintharyi.html" id="seven_twelve_subl">linklink</a>
+                </div><!-- seven_twelve_link  -->
+            </div><!-- seven_twelve_cap -->
+          </div><!-- seven_twelve_figure -->
+        </div><!-- seven_twelve -->
+        <div id="seven_th">
+          <div id="seven_th_figure">
+            <img src="img/35.jpg" id="seven_th_img">
+            <div id="seven_th_cap">
+                <div id="seven_th_about">
+                  <a href="states/ayeyarwaddy/ayeyarwaddy.html" id="seven_th_txt"><p id="seven_th_txt">Ayeyarwaddy</p></a>
+                </div><!-- seven_th_about -->
+                <div id="seven_th_link">
+                  <a href="states/ayeyarwaddy/ayeyarwaddy.html" id="seven_th_subl">linklink</a>
+                </div><!-- seven_th_link  -->
+            </div><!-- seven_th_cap -->
+          </div><!-- seven_th_figure -->
+        </div><!-- seven_th -->
+        <div id="seven_fo">
+          <div id="seven_fo_figure">
+            <img src="img/36.jpg" id="seven_fo_img">
+            <div id="seven_fo_cap">
+                <div id="seven_fo_about">
+                  <a href="states/yangon/yangon.html" id="seven_fo_txt"><p id="seven_fo_txt">Yangon</p></a>
+                </div><!-- seven_fo_about -->
+                <div id="seven_fo_link">
+                  <a href="states/yangon/yangon.html" id="seven_fo_subl">linklink</a>
+                </div><!-- seven_fo_link  -->
+            </div><!-- seven_fo_cap -->
+          </div><!-- seven_fo_figure -->
+        </div><!-- seven_fo -->
+      </div><!-- seven_content -->
+    </div><!-- seven -->
+</div><!-- content -->
+<div id="footer">
+  <div id="ft">
+    <p id="foottxt">2020 &copy; NayToeAung</p>
+  </div><!--  ft -->
+</div><!-- footer -->
+</body>
+</html>
