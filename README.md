@@ -1,4 +1,4 @@
-# beautifulMyanmar
+# Myanmar
 A static front-end website about the major beautiful scene of my country
 
 This site is built with HTML, CSS with few of JavaScript. 
